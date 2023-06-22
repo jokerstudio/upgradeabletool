@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# Upgradeable tool for target contract version
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates upgrade the target contract with Hardhat.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+## Replace the proxy address:
+replace the `PROXY_ADDRESS` in the deployment script with the deployed proxy address
+e.g. the box deploy script `scripts/deploy_boxv2.ts`
+```ts
+const proxyAddress = "{{PROXY_ADDRESS}}";
 ```
+
+## Deploy the origin version:
+```bash
+npx hardhat run {{path/to/you/script}} --network localhost
+```
+

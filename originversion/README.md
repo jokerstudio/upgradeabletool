@@ -1,13 +1,13 @@
-# Sample Hardhat Project
+# Upgradeable tool for origin contract version
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates deploy the origin contract with Hardhat.
 
-Try running some of the following tasks:
+## Start local node:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+```bash
 npx hardhat node
-npx hardhat run scripts/deploy.ts
+```
+## Deploy the origin version:
+```bash
+npx hardhat run {{path/to/you/script}} --network localhost
 ```
